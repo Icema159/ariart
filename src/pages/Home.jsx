@@ -7,11 +7,13 @@ import Contacts from "../components/Contacts";
 export default function Home() {
     return (
         <>
-            <Hero />
-            <About />
-            <Deserts />
-            <Decor />
-            <Contacts />
+            <>
+                <Hero />
+                <div id="apie-mus"><About /></div>
+                <div id="desertai"><Deserts /></div>
+                <div id="dekoras"><Decor /></div>
+                <div id="kontaktai"><Contacts /></div>
+            </>
         </>
     );
 }

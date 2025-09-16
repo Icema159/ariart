@@ -1,6 +1,49 @@
 import React from 'react';
 import { useState } from 'react';
 
+const cakesWithImages = [
+    {
+        name: 'Raudonasis aksomas',
+        description: 'Drėgnas biskvitas, sūrio kremas, braškių konfitiūras',
+        image: '/tortai/aksomas.jpg',
+    },
+    {
+        name: 'Citrina–Persikas',
+        description: 'Citrininis biskvitas, persikų įdaras, citrininis kremas',
+        image: '/tortai/citrina.jpg',
+    },
+    {
+        name: 'Medutis',
+        description: 'Medaus ploni biskvitai, grietinėlės kremas',
+        image: '/tortai/medutis.jpg',
+    },
+    {
+        name: 'Oreo musas',
+        description: 'Drėgnas šokoladinis biskvitas, oreo sausainių putėsiai, sūrio pyrago sluoksnis',
+        image: '/tortai/oreo.jpg',
+    },
+    {
+        name: 'Rafaello',
+        description: 'Kokosinis biskvitas, švelnus kremas, traškus migdolų riešutų sluoksnis',
+        image: '/tortai/rafaelo.jpg',
+    },
+    {
+        name: 'Serbentas',
+        description: 'Šokoladinis biskvitas. serbentų musas, šokoladinis kremas',
+        image: '/tortai/serbentas.jpg',
+    },
+    {
+        name: 'Šokoladinis',
+        description: 'Šokoladinis biskvitas, tamsaus šokolado įdaras, karamelinis musas, grietinėlės ir balto šokolado kremas',
+        image: '/tortai/sokoladinis.jpg',
+    },
+    {
+        name: 'Šilkine aguona',
+        description: 'Aguoninis biskvitas laistytas pienu, balto šokolado ir maskarponės kremas',
+        image: 'tortai/silkine aguona.jpg'
+    }
+];
+
 const Tortai = () => {
     const [selectedCake, setSelectedCake] = useState(null);
     return (
@@ -30,204 +73,20 @@ const Tortai = () => {
                     Pasirinkite iš mūsų klasikinių bei modernių tortų variantų
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer hover:shadow-xl transition"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Raudonasis aksomas',
-                                description: 'Drėgnas biskvitas, sūrio kremas, braškių konfitiūras',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Raudonasis aksomas</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Apelsinas',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Apelsinas</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Ferrero',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Ferrero</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Vyšnia',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Vyšnia</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Rafaello',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Rafaello</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Karamelinis',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Karamelinis</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Citrina–Persikas',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Citrina–Persikas</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Serbentas',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Serbentas</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Avietinis',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Avietinis</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Oreo musas',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Oreo musas</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Stracciatella',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Stracciatella</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Braškinis',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Braškinis</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Medutis',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Medutis</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Banoffee',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Banoffee</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Marshmallows-avietė',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Marshmallows-avietė</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Šokoladinis',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Šokoladinis</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Mango-avietė',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Mango-avietė</h3>
-                    </div>
-                    <div
-                        className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                        onClick={() =>
-                            setSelectedCake({
-                                name: 'Šilkinė aguona',
-                                description: '',
-                            })
-                        }
-                    >
-                        <h3 className="text-2xl font-semibold mb-2">Šilkinė aguona</h3>
-                    </div>
+                    {cakesWithImages.map((cake, index) => (
+                        <div
+                            key={index}
+                            className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
+                            onClick={() => setSelectedCake({ name: cake.name, description: cake.description })}
+                        >
+                            <img
+                                src={cake.image}
+                                alt={cake.name}
+                                className="w-full h-48 object-cover rounded-md mb-4"
+                            />
+                            <h3 className="text-2xl font-semibold">{cake.name}</h3>
+                        </div>
+                    ))}
                 </div>
             </section>
         </>
