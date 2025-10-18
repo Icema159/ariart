@@ -1,0 +1,33 @@
+# Node modules (visada ignoruoti)
+node_modules/
+
+# Build output (Vite/React sukurti failai)
+dist/
+
+# Environment variables (slapti API key ir pan.)
+.env
+.env.*.local
+
+# Vite dev server cache
+.vite/
+
+# macOS sistemos šiukšlės
+.DS_Store
+
+# VS Code settings (nebent komandoje daliniesi)
+.vscode/
+
+# Logai
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: jei naudoji pnpm
+pnpm-lock.yaml
+
+# Optional: jei naudoji bun
+bun.lockb
+
+# Optional: jei naudoji netlify, vercel ir pan. – ignoruok jų output folderius
+.netlify/
+.vercel/
