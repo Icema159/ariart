@@ -16,13 +16,13 @@ const Deserts = () => {
                     <Link to="/tortai" className="group">
                         <div className="group cursor-pointer transition-transform duration-300 hover:scale-105">
                             <img src={cakeImg} alt="Tortas" className="w-full h-64 object-cover rounded-2xl mb-2" />
-                            <p className="text-sm text-purple-100 text-center mb-1 font-body">
+                            <p className="text-sm text-purple-100 text-center mb-1 font-body" data-aos="fade-up">
                                 1kg tortas be dekoro 25.00€
                                 Torto dekoras gali kainuoti nuo 5€ iki 25€,
                                 priklausomai nuo sudétingumo.
                             </p>
-                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300">Tortai</h3>
-                            <button className="hidden sm:inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white">
+                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">Tortai</h3>
+                            <button className="inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white" data-aos="fade-up" data-aos-delay="200">
                                 Išsirinkti skonį
                             </button>
                         </div>
@@ -32,12 +32,13 @@ const Deserts = () => {
                     <Link to="/macarons" className="group">
                         <div className="group cursor-pointer transition-transform duration-300 hover:scale-105">
                             <img src={macaronsImg} alt="Makarūnsai" className="w-full h-64 object-cover rounded-2xl mb-2" />
-                            <p className="text-sm text-purple-100 text-center mb-1 font-body">1vnt.
+                            <p className="text-sm text-purple-100 text-center mb-1 font-body" data-aos="fade-up">
+                                1vnt.
                                 2.00eur
                                 Uzsakomi rinkiniai 4vnt., 8vnt. arba
                                 16vnt.</p>
-                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300">Makarūnsai</h3>
-                            <button className="hidden sm:inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white">
+                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">Makarūnsai</h3>
+                            <button className="inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white" data-aos="fade-up" data-aos-delay="200">
                                 Išsirinkti skonį
                             </button>
                         </div>
@@ -47,9 +48,9 @@ const Deserts = () => {
                     <Link to="/kiti-desertai" className="group">
                         <div className="group cursor-pointer transition-transform duration-300 hover:scale-105">
                             <img src={cupcakesImg} alt="Keksiukai" className="w-full h-64 object-cover rounded-2xl mb-2" />
-                            <p className="text-sm text-purple-100 text-center mb-1 font-body">Keksiukai, cake pops'ai, sausainiai – nuo 2€ už vnt.</p>
-                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300">Kiti desertai</h3>
-                            <button className="hidden sm:inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white">
+                            <p className="text-sm text-purple-100 text-center mb-1 font-body" data-aos="fade-up">Keksiukai, cake pops'ai, sausainiai – nuo 2€ už vnt.</p>
+                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">Kiti desertai</h3>
+                            <button className="inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white" data-aos="fade-up" data-aos-delay="200">
                                 Išsirinkti skonį
                             </button>
                         </div>

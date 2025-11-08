@@ -8,13 +8,12 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-[url('/pattern-dots.svg')] bg-[length:40px_40px] bg-repeat opacity-10 pointer-events-none z-0"></div>
 
                 {/* Pavadinimas ir subtitras */}
-                <div className="text-center z-10">
-                    <h1 className="text-8xl md:text-8xl font-bold tracking-wide animate-fade-in">
-                        Ari.Art <span role="img" aria-label="cake"></span>
-                    </h1>
-                    <p className="text-md md:text-lg italic tracking-wide mt-1 animate-fade-in">
-                        desertinė
-                    </p>
+                <div className="flex flex-col items-center z-10">
+                    <img
+                        src="public/logo.png"
+                        alt="Ari.Art logotipas"
+                        className="w-56 md:w-72 object-cover mb-2 animate-fade-in rounded-full shadow-lg border-2 border-white"
+                    />
 
                     {/* NAVIGACIJA */}
                     <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mt-6 text-sm md:text-base px-4 w-full z-10">
@@ -78,38 +77,11 @@ export default function Hero() {
                             </a>
                         </div>
                     </div>
+                    <div className="mt-10"></div>
                 </div>
             </section>
 
-            <div className="custom-shape-divider-bottom-1756668446">
-                <svg
-                    data-name="Layer 1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120"
-                    preserveAspectRatio="none"
-                >
-                    <defs>
-                        <linearGradient
-                            id="heroGradient"
-                            x1="0%"
-                            y1="0%"
-                            x2="100%"
-                            y2="0%"
-                        >
-                            <stop offset="0%" stopColor="#6B21A8" />
-                            <stop offset="100%" stopColor="#D8B4FE" />
-                        </linearGradient>
-                    </defs>
-                    <path
-                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,
-          82.39-16.72,168.19-17.73,250.45-.39C823.78,31,
-          906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,
-          214.34,3V0H0V27.35A600.21,600.21,0,0,0,
-          321.39,56.44Z"
-                        fill="url(#heroGradient)"
-                    ></path>
-                </svg>
-            </div>
+
         </>
     );
 }
