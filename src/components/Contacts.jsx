@@ -25,7 +25,7 @@ const Contacts = () => {
                         Turgaus g. 1, Jonava, 55149 Jonavos r. sav.
                     </p>
                 </div>
-                <div className="w-full md:w-1/2">
+                <div className="w-full rounded-2xl md:w-1/2">
                     <iframe
                         title="Ari.Art location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.385960339159!2d24.2770889!3d55.0711359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7238a2b29a54f%3A0x5e8f1f1c14c3d1d1!2sTurgaus%20g.%201%2C%2055149%20Jonava%2C%20Lithuania!5e0!3m2!1sen!2slt!4v1699999999999!5m2!1sen!2slt"

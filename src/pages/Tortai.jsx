@@ -7,41 +7,49 @@ const cakesWithImages = [
         name: 'Raudonasis aksomas',
         description: 'Drėgnas biskvitas, sūrio kremas, braškių konfitiūras',
         image: '/tortai/aksomas.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Citrina–Persikas',
         description: 'Citrininis biskvitas, persikų įdaras, citrininis kremas',
         image: '/tortai/citrina.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Medutis',
         description: 'Medaus ploni biskvitai, grietinėlės kremas',
         image: '/tortai/medutis.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Oreo musas',
         description: 'Drėgnas šokoladinis biskvitas, oreo sausainių putėsiai, sūrio pyrago sluoksnis',
         image: '/tortai/oreo.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Rafaello',
         description: 'Kokosinis biskvitas, švelnus kremas, traškus migdolų riešutų sluoksnis',
         image: '/tortai/rafaelo.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Serbentas',
         description: 'Šokoladinis biskvitas. serbentų musas, šokoladinis kremas',
         image: '/tortai/serbentas.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Šokoladinis',
         description: 'Šokoladinis biskvitas, tamsaus šokolado įdaras, karamelinis musas, grietinėlės ir balto šokolado kremas',
         image: '/tortai/sokoladinis.jpg',
+        price: 'nuo 25€ / kg'
     },
     {
         name: 'Šilkine aguona',
         description: 'Aguoninis biskvitas laistytas pienu, balto šokolado ir maskarponės kremas',
-        image: 'tortai/silkine aguona.jpg'
+        image: 'tortai/silkine aguona.jpg',
+        price: 'nuo 25€ / kg'
     }
 ];
 
@@ -57,8 +65,14 @@ const Tortai = () => {
                         </button>
                         {selectedCake && (
                             <>
+                                <img
+                                    src={selectedCake.image}
+                                    alt={selectedCake.name}
+                                    className="w-full h-48 object-cover rounded-md mb-4"
+                                />
                                 <h2 className="text-2xl font-bold mb-2">{selectedCake.name}</h2>
                                 <p>{selectedCake.description}</p>
+                                <p className="text-lg font-semibold">{selectedCake.price}</p>
                             </>
                         )}
                     </div>
@@ -73,7 +87,7 @@ const Tortai = () => {
                             <div
                                 key={index}
                                 className="bg-white text-purple-900 rounded-lg shadow-lg p-6 cursor-pointer transition-opacity transition-transform duration-700 hover:scale-105 hover:opacity-90"
-                                onClick={() => setSelectedCake({ name: cake.name, description: cake.description })}
+                                onClick={() => setSelectedCake({ name: cake.name, description: cake.description, price: cake.price, image: cake.image })}
                             >
                                 <img
                                     src={cake.image}

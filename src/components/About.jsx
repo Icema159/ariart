@@ -5,9 +5,9 @@ export default function About() {
         <>
             <section
                 data-aos="fade-up"
-                className="bg-white text-black py-16 px-6 text-center animate-fade-in font-serif">
-                <h2 className="text-4xl font-bold mb-2 text-black animate-fade-in font-serif">Apie mus</h2>
-                <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed text-black mb-10 animate-fade-in delay-150 font-serif">
+                className="bg-white text-black py-16 px-6 text-center animate-fade-in font-body">
+                <h2 className="text-4xl font-bold mb-2 text-black animate-fade-in font-heading">Apie mus</h2>
+                <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed text-black mb-10 animate-fade-in delay-150 font-body">
                     Ari.Art – tai vieta, kur susitinka kūrybiškumas ir skonis. Mūsų desertai gimsta iš meilės estetikai ir
                     noro pradžiuginti kiekvieną, kuris pasirenka mūsų kepinius savo šventei ar kasdieniam pasilepinimui.
                 </p>

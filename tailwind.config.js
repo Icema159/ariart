@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-
       colors: {
         heroFrom: '#9D7EB9',
         heroTo: '#E8D8F1',
@@ -26,8 +25,8 @@ module.exports = {
         'fade-in': 'fade-in 1.5s ease-out',
       },
       fontFamily: {
-        playfair: ['"Playfair Display"', 'serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        header: ['"Lexend Peta"', 'sans-serif'],
+        body: ['"Josefin Sans"', 'sans-serif'],
       },
     },
   },

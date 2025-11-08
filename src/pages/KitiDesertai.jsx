@@ -20,7 +20,7 @@ export default function KitiDesertai() {
                             onClick={() => toggleSection("keksiukai")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🧁 Keksiukai (2,5 €/vnt)
+                            🧁 Keksiukai (2,00 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "keksiukai" ? "rotate-180" : ""
                                     }`}
@@ -29,20 +29,25 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "keksiukai" && (
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Šokoladiniai su karamele</li>
-                                <li>Citrininiai su aviete</li>
-                                <li>Šokoladiniai arba vaniliniai su kokosu</li>
-                                <li>Vaniliniai su pasifloru</li>
-                                <li>Šokoladiniai su vyšnia</li>
-                                <li>Raudonasis aksomas su aviete</li>
-                                <li>
-                                    <span className="font-semibold text-purple-600">NAUJIENA:</span> raffaello su įdaru, aplietas su baltu šokoladu ir kokoso drožlėmis
-                                </li>
-                                <li>
-                                    <span className="font-semibold text-purple-600">NAUJIENA:</span> ferrero su įdaru, aplietas pienišku šokoladu ir lazd. rieš.
-                                </li>
-                            </ul>
+                            <>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li>Šokoladiniai su karamele</li>
+                                    <li>Citrininiai su aviete</li>
+                                    <li>Šokoladiniai arba vaniliniai su kokosu</li>
+                                    <li>Vaniliniai su pasifloru</li>
+                                    <li>Šokoladiniai su vyšnia</li>
+                                    <li>Raudonasis aksomas su aviete</li>
+                                    <li>
+                                        <span className="font-semibold text-purple-600">NAUJIENA:</span> raffaello su įdaru, aplietas su baltu šokoladu ir kokoso drožlėmis
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold text-purple-600">NAUJIENA:</span> ferrero su įdaru, aplietas pienišku šokoladu ir lazd. rieš.
+                                    </li>
+                                </ul>
+                                <p className="text-sm text-purple-300 mt-2">
+                                    Užsakomi rinkiniai 6vnt., 9vnt., 12vnt ar daugiau. Spausdintas užrašas, paveikslėlis +1 € / vnt.
+                                </p>
+                            </>
                         )}
                     </div>
 
@@ -51,7 +56,7 @@ export default function KitiDesertai() {
                             onClick={() => toggleSection("desertaiIndeliuose")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🍨 Desertai indeliuose
+                            🍨 Desertai indeliuose (3,00 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "desertaiIndeliuose" ? "rotate-180" : ""
                                     }`}
@@ -60,10 +65,13 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "desertaiIndeliuose" && (
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Desertas su aviečių įdaru</li>
-                                <li>Šokoladinis desertas su vyšnia</li>
-                            </ul>
+                            <>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li>Desertas su aviečių įdaru</li>
+                                    <li>Šokoladinis desertas su vyšnia</li>
+                                </ul>
+                                <p className="text-sm text-purple-300 mt-2">Mažiausias užsakomas kiekis – 6 vnt.</p>
+                            </>
                         )}
                     </div>
 
@@ -72,7 +80,7 @@ export default function KitiDesertai() {
                             onClick={() => toggleSection("popsiukai")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🍡 Popsiukai
+                            🍡 Popsiukai (1,30 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "popsiukai" ? "rotate-180" : ""
                                     }`}
@@ -81,12 +89,15 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "popsiukai" && (
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Vaniliniai</li>
-                                <li>Šokoladiniai</li>
-                                <li>Raudonasis aksomas</li>
-                                <li>Karameliniai</li>
-                            </ul>
+                            <>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li>Vaniliniai</li>
+                                    <li>Šokoladiniai</li>
+                                    <li>Raudonasis aksomas</li>
+                                    <li>Karameliniai</li>
+                                </ul>
+                                <p className="text-sm text-purple-300 mt-2">Mažiausias užsakomas kiekis – 10 vnt. Dekoruojami pagal poreikius.</p>
+                            </>
                         )}
                     </div>
 
@@ -95,7 +106,7 @@ export default function KitiDesertai() {
                             onClick={() => toggleSection("prancuziskiDesertai")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🇫🇷 Prancūziški desertai
+                            🇫🇷 Prancūziški desertai (3,00 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "prancuziskiDesertai" ? "rotate-180" : ""
                                     }`}
@@ -104,12 +115,15 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "prancuziskiDesertai" && (
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Vyšnia šokolade</li>
-                                <li>Pistacija–Avietė</li>
-                                <li>Pasifloras–Mangas</li>
-                                <li>Sūris su karamele ir riešutais</li>
-                            </ul>
+                            <>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li>Vyšnia šokolade</li>
+                                    <li>Pistacija–Avietė</li>
+                                    <li>Pasifloras–Mangas</li>
+                                    <li>Sūris su karamele ir riešutais</li>
+                                </ul>
+                                <p className="text-sm text-purple-300 mt-2">Mažiausias užsakomas kiekis – 6 vnt.</p>
+                            </>
                         )}
                     </div>
 
@@ -118,7 +132,7 @@ export default function KitiDesertai() {
                             onClick={() => toggleSection("miniSpurgos")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🍩 Mini spurgos
+                            🍩 Mini spurgos (0,80 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "miniSpurgos" ? "rotate-180" : ""
                                     }`}
@@ -127,7 +141,10 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "miniSpurgos" && (
-                            <p>Vanilinės</p>
+                            <>
+                                <p>Vanilinės</p>
+                                <p className="text-sm text-purple-300 mt-2">Mažiausias užsakomas kiekis – 10 vnt. Spausdintas užrašas arba paveiksliukas +1 €. Dekoruojamos pagal poreikius.</p>
+                            </>
                         )}
                     </div>
 
@@ -136,7 +153,7 @@ export default function KitiDesertai() {
                             onClick={() => toggleSection("pannaCotta")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🍮 Panna Cotta
+                            🍮 Panna Cotta (2,00 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "pannaCotta" ? "rotate-180" : ""
                                     }`}
@@ -145,10 +162,13 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "pannaCotta" && (
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Mandarinų</li>
-                                <li>Braškinė</li>
-                            </ul>
+                            <>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li>Mandarinų</li>
+                                    <li>Braškinė</li>
+                                </ul>
+                                <p className="text-sm text-purple-300 mt-2">Mažiausias užsakomas kiekis – 6 vnt.</p>
+                            </>
                         )}
                     </div>
 

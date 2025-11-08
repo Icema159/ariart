@@ -8,35 +8,24 @@ const Decor = () => {
                 className="bg-lightViolet py-16 px-6 text-center font-serif">
                 {/* Antraštė */}
                 <h2 className="text-4xl font-bold mb-2 text-gray-800 animate-fade-in">Dekoras</h2>
-                <p className="text-lg text-gray-700 mb-10 animate-fade-in delay-150">
-                    Subtilus grožis, pritaikytas tavo šventei.
+                <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed text-black mb-10 animate-fade-in delay-150 font-body">                    Subtilus grožis, pritaikytas tavo šventei.
                 </p>
 
                 {/* Aprašymas */}
-                <p className="max-w-3xl mx-auto text-gray-600 mb-12 animate-fade-in delay-300">
-                    „Ari.Art“ dekoruoja įvairias šventes – nuo mažų gimtadienių iki didelių vestuvių.
+                <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed text-black mb-10 animate-fade-in delay-150 font-body">                    „Ari.Art“ dekoruoja įvairias šventes – nuo mažų gimtadienių iki didelių vestuvių.
                     Kiekvienas stalas, desertas ar detalė apgalvota ir priderinta prie tavo vizijos.
                 </p>
 
                 {/* Dekorų tipų kortelės */}
                 <div className="grid gap-8 md:grid-cols-2 justify-center items-center max-w-4xl mx-auto">
-                    <div className="bg-white shadow-lg rounded-lg p-6 transition-transform hover:scale-105">
-                        <img src="/images/vestuves.jpg" alt="Vestuvės dekoras" className="rounded-md mb-4 w-full h-56 object-cover" />
+                    <div>
+                        <img src="/images/vestuves.jpg" alt="Vestuvės dekoras" className="rounded-2xl mb-4 w-full h-56 object-cover" />
                         <h3 className="text-xl font-semibold mb-2 text-gray-800">Vestuvės</h3>
-                        <p className="text-gray-600 text-sm">Klasika, romantika ir išskirtinumas.</p>
                     </div>
-                    <div className="bg-white shadow-lg rounded-lg p-6 transition-transform hover:scale-105">
-                        <img src="/images/krikstynos.jpg" alt="Krikštynų dekoras" className="rounded-md mb-4 w-full h-56 object-cover" />
+                    <div>
+                        <img src="/images/krikstynos.jpg" alt="Krikštynų dekoras" className="rounded-2xl mb-4 w-full h-56 object-cover" />
                         <h3 className="text-xl font-semibold mb-2 text-gray-800">Krikštynos</h3>
-                        <p className="text-gray-600 text-sm">Švelnios spalvos ir mielos detalės.</p>
                     </div>
-                </div>
-
-                {/* CTA Mygtukas */}
-                <div className="mt-12">
-                    <button className="bg-purple-500 text-white px-6 py-3 rounded-full font-medium hover:bg-purple-600 transition">
-                        Pamatyti daugiau dekorų
-                    </button>
                 </div>
             </section>
 
