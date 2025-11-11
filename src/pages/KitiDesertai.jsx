@@ -16,11 +16,12 @@ export default function KitiDesertai() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
 
                     <div className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/keksiukai.jpg" alt="Keksiukai" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("keksiukai")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
                         >
-                            🧁 Keksiukai (2,00 €/vnt)
+                            🧁 Keksiukai (2,20 €/vnt)
                             <span
                                 className={`transform transition-transform duration-300 ${openSection === "keksiukai" ? "rotate-180" : ""
                                     }`}
@@ -52,6 +53,7 @@ export default function KitiDesertai() {
                     </div>
 
                     <div key="desertaiIndeliuose" className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/desertai-indeliuose.jpg" alt="Desertai indeliuose" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("desertaiIndeliuose")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
@@ -76,6 +78,7 @@ export default function KitiDesertai() {
                     </div>
 
                     <div key="popsiukai" className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/popsiukai.jpg" alt="Popsiukai" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("popsiukai")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
@@ -102,6 +105,7 @@ export default function KitiDesertai() {
                     </div>
 
                     <div key="prancuziskiDesertai" className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/prancuziski-desertai.jpg" alt="Prancūziški desertai" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("prancuziskiDesertai")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
@@ -128,6 +132,7 @@ export default function KitiDesertai() {
                     </div>
 
                     <div key="miniSpurgos" className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/mini-spurgos.jpg" alt="Mini spurgos" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("miniSpurgos")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
@@ -149,6 +154,7 @@ export default function KitiDesertai() {
                     </div>
 
                     <div key="pannaCotta" className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/panna-cotta.jpg" alt="Panna Cotta" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("pannaCotta")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
@@ -173,6 +179,7 @@ export default function KitiDesertai() {
                     </div>
 
                     <div key="kaneles" className="bg-white/10 p-4 rounded-xl shadow-md self-start">
+                        <img src="/kiti-desertai/kaneles.jpg" alt="Kanelės" className="rounded-lg mb-4" />
                         <h3
                             onClick={() => toggleSection("kaneles")}
                             className="cursor-pointer text-2xl font-semibold mb-2 hover:text-purple-200 transition-colors flex justify-between items-center text-white"
@@ -186,18 +193,20 @@ export default function KitiDesertai() {
                             </span>
                         </h3>
                         {openSection === "kaneles" && (
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Klasikinės (1vnt. ~45g)</li>
-                                <li>Šokoladinės (1vnt. ~45g)</li>
-                                <li>Su įdaru (1vnt. ~50g):
-                                    <ul className="list-disc list-inside ml-4">
-                                        <li>Pistacijų</li>
-                                        <li>Avietinis</li>
-                                        <li>Vanilinis</li>
-                                    </ul>
-                                </li>
-                                <li>1 kg (~30vnt. kanelių)</li>
-                            </ul>
+                            <>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li>Klasikinės (1vnt. ~45g)</li>
+                                    <li>Šokoladinės (1vnt. ~45g)</li>
+                                    <li>Su įdaru (1vnt. ~50g):
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>Pistacijų</li>
+                                            <li>Avietinis</li>
+                                            <li>Vanilinis</li>
+                                        </ul>
+                                    </li>
+                                    <li>1 kg (~30vnt. kanelių)</li>
+                                </ul>
+                            </>
                         )}
                     </div>
                 </div>

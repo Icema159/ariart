@@ -34,10 +34,10 @@ const Deserts = () => {
                             <img src={macaronsImg} alt="Makarūnsai" className="w-full h-64 object-cover rounded-2xl mb-2" />
                             <p className="text-sm text-purple-100 text-center mb-1 font-body" data-aos="fade-up">
                                 1vnt.
-                                2.00eur
+                                2.20eur
                                 Uzsakomi rinkiniai 4vnt., 8vnt. arba
                                 16vnt.</p>
-                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">Makarūnsai</h3>
+                            <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">Macarons</h3>
                             <button className="inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white" data-aos="fade-up" data-aos-delay="200">
                                 Išsirinkti skonį
                             </button>
@@ -51,13 +51,13 @@ const Deserts = () => {
                             <p className="text-sm text-purple-100 text-center mb-1 font-body" data-aos="fade-up">Keksiukai, cake pops'ai, sausainiai – nuo 2€ už vnt.</p>
                             <h3 className="text-lg font-semibold text-white text-center font-header group-hover:text-purple-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">Kiti desertai</h3>
                             <button className="inline-block mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body hover:bg-purple-800 hover:text-white" data-aos="fade-up" data-aos-delay="200">
-                                Išsirinkti skonį
+                                Išsirinkti desertus
                             </button>
                         </div>
                     </Link>
                 </div>
             </section>
-            <div className="custom-shape-divider-top-1699999999">
+            <div className="custom-shape-divider-top-1699999999 -mt-1">
                 <svg
                     data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"
