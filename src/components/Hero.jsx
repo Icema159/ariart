@@ -10,7 +10,7 @@ export default function Hero() {
                 {/* Pavadinimas ir subtitras */}
                 <div className="flex flex-col items-center z-10">
                     <img
-                        src="public/logo.png"
+                        src="/logo.png"
                         alt="Ari.Art logotipas"
                         className="w-56 md:w-72 object-cover mb-2 animate-fade-in rounded-full shadow-lg border-2 border-white"
                     />
