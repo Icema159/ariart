@@ -55,9 +55,22 @@ const cakesWithImages = [
 
 const Tortai = () => {
     const [selectedCake, setSelectedCake] = useState(null);
+    const [showInfo, setShowInfo] = useState(false);
     return (
         <SwipeWrapper scrollTo="tortai">
             <>
+                <div className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-500 ${showInfo ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+                    <div className="bg-white rounded-lg max-w-md w-full p-6 text-purple-900 relative transition-transform duration-500 transform scale-100">
+                        <button onClick={() => setShowInfo(false)} className="absolute top-2 right-4 text-xl font-bold">×</button>
+                        <h3 className="text-2xl font-semibold mb-4">Tortų užsakymo informacija</h3>
+                        <ul className="space-y-2 text-sm">
+                            <li>• Kaina: <span className="font-semibold">nuo 25€ / kg</span></li>
+                            <li>• Minimalus užsakymas: <span className="font-semibold">1 kg</span></li>
+                            <li>• Dekoracijos: <span className="font-semibold">Sausų gėlių dekoras +10€</span></li>
+                            <li>• Papildomas individualus dekoras gali kainuoti papildomai pagal pageidavimą.</li>
+                        </ul>
+                    </div>
+                </div>
                 <div className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-700 ${selectedCake ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                     <div className={`bg-white rounded-lg max-w-md w-full p-6 text-purple-900 relative transition-transform duration-700 transform ${selectedCake ? 'scale-100' : 'scale-95'}`}>
                         <button onClick={() => setSelectedCake(null)} className="absolute top-2 right-4 text-xl font-bold">
@@ -79,6 +92,12 @@ const Tortai = () => {
                 </div>
                 <section className="py-16 px-6 text-white bg-gradient-to-b from-purple-800 to-purple-300 min-h-screen">
                     <h2 className="text-4xl font-bold text-center mb-4">Tortai</h2>
+                    <button
+                        onClick={() => setShowInfo(true)}
+                        className="block mx-auto mb-10 px-6 py-3 bg-white/20 border border-white/30 rounded-lg text-white hover:bg-white/30 transition duration-300"
+                    >
+                        Tortų užsakymo informacija
+                    </button>
                     <p className="text-lg text-center mb-12 max-w-2xl mx-auto">
                         Pasirinkite iš mūsų klasikinių bei modernių tortų variantų
                     </p>

@@ -68,7 +68,7 @@ export default function Hero() {
                                 <FaInstagram size={24} />
                             </a>
                             <a
-                                href="https://www.facebook.com/ari.art.desertine"
+                                href="https://www.facebook.com/profile.php?id=100070058659281"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="font-poppins hover:text-blue-300 transition-colors duration-300"

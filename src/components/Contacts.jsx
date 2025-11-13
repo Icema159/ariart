@@ -14,11 +14,11 @@ const Contacts = () => {
                     <h3 className="text-2xl font-semibold mb-4">Kontaktai</h3>
                     <p className="flex items-center gap-2">
                         <FiPhone className="text-xl" />
-                        <a href="tel:+37060000000" className="hover:underline">+370 600 00000</a>
+                        <a href="tel:+37060000000" className="hover:underline">+370 64385799</a>
                     </p>
                     <p className="flex items-center gap-2">
                         <FiMail className="text-xl" />
-                        <a href="mailto:info@ari.art" className="hover:underline">info@ari.art</a>
+                        <a href="mailto:monikapiragyte@gmail.com" className="hover:underline">monikapiragyte@gmail.com</a>
                     </p>
                     <p className="flex items-center gap-2">
                         <FiMapPin className="text-xl" />

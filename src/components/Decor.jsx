@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Decor = () => {
     return (
@@ -18,14 +19,20 @@ const Decor = () => {
 
                 {/* Dekorų tipų kortelės */}
                 <div className="grid gap-8 md:grid-cols-2 justify-center items-center max-w-4xl mx-auto">
-                    <div>
-                        <img src="/images/vestuves.jpg" alt="Vestuvės dekoras" className="rounded-2xl mb-4 w-full h-56 object-cover" />
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">Vestuvės</h3>
+                    <div className="group transition-transform duration-300 ease-out hover:scale-[1.02]">
+                        <img src="/images/vestuves.jpg" alt="Vestuvės dekoras" className="w-full h-80 md:h-64 object-cover rounded-2xl mb-2 transition-transform duration-300 ease-out group-hover:scale-105" />                        <h3 className="text-xl font-semibold mb-2 text-gray-800" data-aos="fade-up">Vestuvės</h3>
                     </div>
-                    <div>
-                        <img src="/images/krikstynos.jpg" alt="Krikštynų dekoras" className="rounded-2xl mb-4 w-full h-56 object-cover" />
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">Krikštynos</h3>
+                    <div className="group transition-transform duration-300 ease-out hover:scale-[1.02]">
+                        <img src="/images/krikstynos.jpg" alt="Krikštynų dekoras" className="w-full h-80 md:h-64 object-cover rounded-2xl mb-2 transition-transform duration-300 ease-out group-hover:scale-105" />                        <h3 className="text-xl font-semibold mb-2 text-gray-800" data-aos="fade-up">Krikštynos</h3>
                     </div>
+                </div>
+
+                <div className="mt-8 text-center" data-aos="fade-up">
+                    <Link to="/DekoroPaketai">
+                        <button className="px-6 py-3 bg-purple-700 text-white rounded-xl shadow hover:bg-purple-800 hover:scale-105 transition-transform duration-300 ease-out font-body">
+                            Išsirinkti paketą
+                        </button>
+                    </Link>
                 </div>
             </section>
 

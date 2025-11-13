@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Tortai from './pages/Tortai';
 import Macarons from './pages/Macarons';
 import KitiDesertai from './pages/KitiDesertai';
+import DekoroPaketai from './pages/DekoroPaketai';
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/tortai" element={<Tortai />} />
         <Route path="/macarons" element={<Macarons />} />
         <Route path="/kiti-desertai" element={<KitiDesertai />} />
+        <Route path="/DekoroPaketai" element={<DekoroPaketai />} />
       </Routes>
     </>
   );
