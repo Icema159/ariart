@@ -48,9 +48,10 @@ const cakesWithImages = [
     {
         name: 'Šilkine aguona',
         description: 'Aguoninis biskvitas laistytas pienu, balto šokolado ir maskarponės kremas',
-        image: 'tortai/silkine aguona.jpg',
+        image: '/tortai/silkine aguona.jpg',
         price: 'nuo 25€ / kg'
-    }
+    },
+
 ];
 
 const Tortai = () => {
@@ -116,6 +117,53 @@ const Tortai = () => {
                                 <h3 className="text-2xl font-semibold">{cake.name}</h3>
                             </div>
                         ))}
+                    </div>
+                    <h3 className="text-2xl font-semibold text-center mt-16 mb-6">Kiti skoniai</h3>
+                    <div className="max-w-3xl mx-auto space-y-4 text-purple-900">
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Tropikai</h4>
+                            <p className="text-sm">Drėgnas biskvitas, sūrio kremas, tropinių vaisių tyrė, pasiflorų ganašas</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Pistacija</h4>
+                            <p className="text-sm">Pistacijų biskvitas, aviečių konfitiūras, pistacijų ganašas</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Profitrolis</h4>
+                            <p className="text-sm">Vanilinis biskvitas, braškių kremas, profitroliai arba šokoladinis biskvitas, šokoladinis kremas ir profitroliai</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Apelsinas</h4>
+                            <p className="text-sm">Morkų ir riešutų biskvitas, sūrio kremas, apelsinų konfit</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Ferrero</h4>
+                            <p className="text-sm">Šokoladinis biskvitas ir kremas, traškus riešutų sluoksnis</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Karamelinis</h4>
+                            <p className="text-sm">Karamelinis biskvitas, traškus sluoksnis, karamelinis sūrio kremas</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Avietinis</h4>
+                            <p className="text-sm">Vanilinis biskvitas, sūrio kremas, aviečių ir balto šokolado įdaras</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Stracciatella</h4>
+                            <p className="text-sm">Vanilinis biskvitas, šilauogės, gaivus kremas su baltu šokoladu</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Banoffee</h4>
+                            <p className="text-sm">Vanilinis arba šokoladinis biskvitas, sūrio kremas, karamelė, banana</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Marshmallows-avietė</h4>
+                            <p className="text-sm">Avietinis biskvitas, aviečių įdaras, aviečių zefyras, balto šokolado kremas</p>
+                        </div>
+                        <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2">
+                            <h4 className="text-lg font-semibold">Mango-avietė</h4>
+                            <p className="text-sm">Vanilinis biskvitas, mango ganašas, aviečių įdaras, grietinėlės kremas</p>
+                        </div>
                     </div>
                 </section>
             </>
